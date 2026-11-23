@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MADAM — Equal Is Not a Favor</title>
+  <meta name="description" content="MADAM is a student project on gender equality: the facts, where to find help, and an anonymous wall where anyone can leave a note.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav"></div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="hero__hello"><span>♥</span> Hi, welcome! Everyone belongs here.</span>
+        <h1><span class="line">Equal is not a favor.</span> <span class="line">It's a <span class="mark">right.</span></span></h1>
+        <p class="hero__tagline">Making a difference, always magnificent</p>
+        <p class="hero__text">We're students who think fairness shouldn't depend on gender. This site is our small part:
+          the facts, where to find help, and a wall where you can say what's on your mind.</p>
+        <div class="hero__actions">
+          <a href="#safe-space" class="btn btn--solid">Write on the wall</a>
+          <a href="issue.html" class="arrow-link">Read about the issue</a>
+        </div>
+      </div>
+      <div class="circle" id="circle" tabindex="0" role="img"
+        aria-label="Eight different people standing in a circle. Hover or tap and they reach in to join hands in the middle.">
+        <svg viewBox="40 20 520 500" aria-hidden="true"></svg>
+        <p class="circle__note">Hover here to bring everyone together.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ NUMBERS ============ -->
+  <section class="section section--honey">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <span class="label">The numbers</span>
+          <h2>How far there is still to go</h2>
+        </div>
+        <p>Four figures we keep coming back to. The source is under each one.</p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal">
+          <div class="stat__num">134</div>
+          <div class="stat__label">years until full gender parity, at the current pace</div>
+          <div class="stat__src">WEF Global Gender Gap Report 2024</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">1 in 3</div>
+          <div class="stat__label">women experience physical or sexual violence in their lifetime</div>
+          <div class="stat__src">World Health Organization</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">27%</div>
+          <div class="stat__label">of seats in national parliaments are held by women</div>
+          <div class="stat__src">Inter-Parliamentary Union</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">3×</div>
+          <div class="stat__label">as much unpaid care work is done by women as by men</div>
+          <div class="stat__src">UN Women</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ READ MORE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <span class="label">Read more</span>
+          <h2>Start here</h2>
+        </div>
+        <p>Short pages, written by us. Pick whichever one you need.</p>
+      </div>
+      <ul class="index reveal">
+        <li><a href="issue.html"><span class="index__n">01</span>
+          <span class="index__title">The issue<small>Six places where the gap is widest, from pay to parliament.</small></span>
+          <span class="index__go">→</span></a></li>
+        <li><a href="about.html"><span class="index__n">02</span>
+          <span class="index__title">About us<small>Who we are, and why the name reads the same both ways.</small></span>
+          <span class="index__go">→</span></a></li>
+        <li><a href="resources.html"><span class="index__n">03</span>
+          <span class="index__title">Resources<small>Hotlines and organizations, if you or someone you know needs help.</small></span>
+          <span class="index__go">→</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SAFE SPACE: THE FREEDOM WALL ============ -->
+  <section class="section section--tint" id="safe-space">
+    <div class="container">
+      <div class="board-head">
+        <div>
+          <span class="label">Safe space</span>
+          <h2>The Freedom Wall</h2>
+          <p>Write a note about anything: something that happened, something you're carrying,
+            something you're proud of. No name, no account. Put it wherever you like on the board.</p>
+          <p class="board-count"><strong id="note-count">0</strong> <span id="note-word">notes</span> on the wall</p>
+        </div>
+        <div class="chips" id="filters" aria-label="Highlight notes by feeling"></div>
+      </div>
+
+      <div class="notice notice--crisis hidden" id="crisis" style="margin:0 0 40px">
+        <i class="ph-light ph-heart"></i>
+        <span><strong>It sounds like you're going through something really hard.</strong>
+        You don't have to carry it alone. <a href="resources.html#hotlines">These hotlines are free</a>,
+        or call <strong>911</strong> if you're in danger.</span>
+      </div>
+
+      <div class="board-area">
+        <button class="fab" id="add-note"><i class="ph-light ph-plus"></i> Add a note</button>
+        <div class="board-wrap board-surface" id="board-wrap">
+          <div class="board-stage" id="board-stage">
+            <div class="board-canvas" id="board-canvas">
+              <div id="notes" aria-live="polite"></div>
+            </div>
+          </div>
+          <p class="board__empty hidden" id="empty">Nothing here yet. Be the first to leave a note.</p>
+        </div>
+      </div>
+      <div class="board-foot">
+        <p>Click a note to read all of it and leave some support.</p>
+        <p>Shows the 80 most recent notes. Need to talk to someone? <a href="resources.html#hotlines">Hotlines</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <!-- ============ MODAL: write a sticky note ============ -->
+  <div class="modal hidden" id="editor-modal" role="dialog" aria-modal="true" aria-label="Write your note">
+    <button class="modal__close" data-close aria-label="Close"><i class="ph-light ph-x"></i></button>
+    <div class="modal__inner modal__inner--editor">
+      <article class="sticky note-editor" id="editor-note">
+        <span class="pin"></span>
+        <div class="sticky__feel" id="editor-feel">Pick a feeling</div>
+        <textarea id="note-text" maxlength="300" placeholder="Write freely..." aria-label="Your note"></textarea>
+        <div class="sticky__foot">
+          <span>Anonymous</span>
+          <span class="counter" id="counter">0 / 300</span>
+        </div>
+      </article>
+
+      <div class="editor-panel">
+        <div class="maker__group">
+          <span class="field-label">How are you feeling?</span>
+          <div class="chips" id="feelings" role="radiogroup" aria-label="Feeling"></div>
+        </div>
+        <div class="maker__group">
+          <span class="field-label">Paper</span>
+          <div class="swatches" id="papers" role="radiogroup" aria-label="Note color"></div>
+        </div>
+        <div class="maker__group">
+          <span class="field-label">Pin</span>
+          <div class="swatches" id="pins" role="radiogroup" aria-label="Pin color"></div>
+        </div>
+
+        <p class="form__msg" id="note-msg" role="status" style="margin-top:14px"></p>
+        <div class="editor-actions">
+          <button type="button" class="btn btn--ghost btn--small" data-close>Cancel</button>
+          <button type="button" class="btn btn--solid btn--small" id="ready">Next: place it</button>
+        </div>
+        <div class="notice">
+          <i class="ph-light ph-lock-simple"></i>
+          <span>Leave out names, numbers, or anything that could identify you or someone else. Everyone can read the wall.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ MODAL: read a note ============ -->
+  <div class="modal hidden" id="view-modal" role="dialog" aria-modal="true" aria-label="Note">
+    <button class="modal__close" data-close aria-label="Close"><i class="ph-light ph-x"></i></button>
+    <div class="modal__inner" id="view-inner"></div>
+  </div>
+
+  <!-- ============ BAR: placing your note ============ -->
+  <div class="pin-bar hidden" id="pin-bar" role="region" aria-label="Place your note">
+    <p>Drag your note to any spot on the wall.</p>
+    <button class="btn btn--ghost btn--small" id="draft-edit">Edit</button>
+    <button class="btn btn--ghost btn--small" id="draft-cancel">Cancel</button>
+    <button class="btn btn--solid btn--small" id="draft-pin">Pin it here</button>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/safespace.js"></script>
+</body>
+</html>

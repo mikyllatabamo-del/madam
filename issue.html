@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Issue — MADAM</title>
+  <meta name="description" content="Why gender equality matters, where the world stands today, what needs to change, and how far we've come.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav"></div>
+
+  <!-- Content inspired by and sourced from the United Nations' Gender Equality page:
+       https://www.un.org/en/global-issues/gender-equality (written in our own words) -->
+
+  <header class="page-head page-head--split">
+    <div class="container">
+      <div>
+        <span class="label">The issue</span>
+        <h1>Gender equality is still unfinished</h1>
+        <p>Women and girls make up half of the world's people, and half of its potential. Equal rights are
+          a basic human right, and they also make communities more peaceful and better off. We're not there yet.</p>
+      </div>
+
+      <!-- "Out of every 100": a dot chart that cycles through the facts on this page. js/issue-dots.js -->
+      <div class="dots" data-dots>
+        <p class="dots__kicker">Out of every 100</p>
+        <div class="dots__headline" aria-live="polite">
+          <span class="dots__num" data-dots-num>27</span>
+          <p class="dots__caption" data-dots-caption>seats in national parliaments are held by women.</p>
+        </div>
+        <div class="dots__grid" data-dots-grid aria-hidden="true"></div>
+        <div class="dots__footer">
+          <div class="dots__tabs" role="tablist" aria-label="Choose a fact">
+            <button type="button" class="dots__tab" role="tab" data-fact="0">Parliament</button>
+            <button type="button" class="dots__tab" role="tab" data-fact="1">Violence</button>
+            <button type="button" class="dots__tab" role="tab" data-fact="2">Pay</button>
+            <button type="button" class="dots__tab" role="tab" data-fact="3">Laws</button>
+          </div>
+          <p class="dots__source">Figures: United Nations</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ WHY IT MATTERS ============ -->
+  <section class="section">
+    <div class="container cols cols--center">
+      <div class="reveal">
+        <span class="label">Why it matters</span>
+        <h2>Half the world can't be left behind</h2>
+        <p class="lede">When women and girls have the same chances as men and boys, everyone gains: economies
+          grow, families are healthier, and societies are more stable.</p>
+        <p>According to UN Women, there is still a long way to go. To get there, the world has to end gender-based
+          violence and make sure everyone has equal access to good education, health care, money and property,
+          work, and a real voice in the decisions that shape their lives.</p>
+      </div>
+      <div class="reveal">
+        <blockquote class="pull">
+          Gender equality is "the unfinished business of our time."
+          <cite>António Guterres, UN Secretary-General</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHERE WE STAND ============ -->
+  <section class="section section--honey">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <span class="label">Where we stand</span>
+          <h2>The numbers, right now</h2>
+        </div>
+        <p>Some progress has been made over the decades, but the gaps below are still wide. Figures from the
+          United Nations.</p>
+      </div>
+      <div class="stats stats--6">
+        <div class="stat reveal">
+          <div class="stat__num">~20%</div>
+          <div class="stat__label">less pay, on average, for women in the labour market worldwide</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">27%</div>
+          <div class="stat__label">of seats in national parliaments were held by women in 2024</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">107</div>
+          <div class="stat__label">countries have never had a woman as head of state</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">1 in 3</div>
+          <div class="stat__label">women (about 736 million) have faced physical or sexual violence at least once</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">54%</div>
+          <div class="stat__label">of countries still lack laws covering every key area of gender equality</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num">$360B</div>
+          <div class="stat__label">more is needed every year to close the gender equality gap by 2030</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT NEEDS TO CHANGE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <span class="label">What needs to change</span>
+          <h2>Six places to start</h2>
+        </div>
+        <p>These are the areas the UN and UN Women keep coming back to. None of them can wait for the others.</p>
+      </div>
+      <div class="topics">
+        <article class="topic reveal">
+          <span class="topic__n">01</span>
+          <h3>End violence against women</h3>
+          <p>Violence against women happens in every country. The UN calls it a pandemic: globally, a woman is
+            killed every 10 minutes. Ending it is the first step to everything else.</p>
+          <p class="source">UN · UNITE to End Violence against Women</p>
+        </article>
+        <article class="topic reveal">
+          <span class="topic__n">02</span>
+          <h3>Education and health for all</h3>
+          <p>Girls and women need the same access to quality schooling and health care, including safe
+            pregnancies, and protection from harmful practices like child marriage.</p>
+          <p class="source">UNICEF · UNFPA</p>
+        </article>
+        <article class="topic reveal">
+          <span class="topic__n">03</span>
+          <h3>Fair pay and economic power</h3>
+          <p>Women still earn around 20% less than men. Equal pay, and equal rights to own property and run
+            businesses, help whole families and economies grow.</p>
+          <p class="source">UN · UN Women</p>
+        </article>
+        <article class="topic reveal">
+          <span class="topic__n">04</span>
+          <h3>A seat where decisions are made</h3>
+          <p>Women hold just over a quarter of parliament seats and about a third of local government seats.
+            Leadership should look like the people it serves.</p>
+          <p class="source">UN · Inter-Parliamentary Union</p>
+        </article>
+        <article class="topic reveal">
+          <span class="topic__n">05</span>
+          <h3>Laws that protect everyone equally</h3>
+          <p>More than half of countries still don't have laws covering every key area, such as equal rights
+            to marry or to start a divorce. Real change needs real laws.</p>
+          <p class="source">UN · Sustainable Development Goal 5</p>
+        </article>
+        <article class="topic reveal">
+          <span class="topic__n">06</span>
+          <h3>Value care work</h3>
+          <p>Cooking, cleaning, and caring for kids and elders falls mostly on women, unpaid. A fairer economy
+            shares that work and invests in women and the people pushing for change.</p>
+          <p class="source">UN Secretary-General's priorities</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE GOT HERE ============ -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <span class="label">How we got here</span>
+          <h2>A timeline of equal rights</h2>
+        </div>
+        <p>Gender equality has been part of the UN's work since day one. Here are the moments that shaped it.</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="timeline__year">1945</span>
+          <div><h3>The UN Charter</h3><p>The UN is founded on respect for human rights for all, without distinction of sex.</p></div></li>
+        <li class="reveal"><span class="timeline__year">1946</span>
+          <div><h3>Commission on the Status of Women</h3><p>A global body dedicated only to gender equality is created in the UN's first year.</p></div></li>
+        <li class="reveal"><span class="timeline__year">1948</span>
+          <div><h3>Universal Declaration of Human Rights</h3><p>Equality between women and men becomes part of international human rights law.</p></div></li>
+        <li class="reveal"><span class="timeline__year">1975</span>
+          <div><h3>First World Conference on Women</h3><p>Held in Mexico City during International Women's Year, followed by the UN Decade for Women.</p></div></li>
+        <li class="reveal"><span class="timeline__year">1979</span>
+          <div><h3>CEDAW</h3><p>Often called an international bill of rights for women, this treaty defines discrimination and how to end it.</p></div></li>
+        <li class="reveal"><span class="timeline__year">1985</span>
+          <div><h3>Nairobi conference</h3><p>About 15,000 activists take part. Many call it the birth of global feminism.</p></div></li>
+        <li class="reveal"><span class="timeline__year">1995</span>
+          <div><h3>Beijing Declaration</h3><p>The world agrees that women's rights are human rights, and commits to specific actions.</p></div></li>
+        <li class="reveal"><span class="timeline__year">2010</span>
+          <div><h3>UN Women is created</h3><p>Four UN offices merge into one body focused on gender equality and empowering women.</p></div></li>
+        <li class="reveal"><span class="timeline__year">2015</span>
+          <div><h3>Sustainable Development Goal 5</h3><p>Achieving gender equality and empowering all women and girls becomes a global goal.</p></div></li>
+        <li class="reveal"><span class="timeline__year">2025</span>
+          <div><h3>Beijing at 30</h3><p>A review finds progress, and a warning: nearly a quarter of governments reported a backlash on women's rights in 2024.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ DAYS TO REMEMBER ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <span class="label">Mark your calendar</span>
+          <h2>Days to remember</h2>
+        </div>
+        <p>Every year, the world pauses on these days to celebrate women and raise awareness. Join in.</p>
+      </div>
+      <div class="days">
+        <div class="day reveal"><span class="day__date"><b>11</b>Feb</span><p>International Day of Women and Girls in Science</p></div>
+        <div class="day reveal"><span class="day__date"><b>8</b>Mar</span><p>International Women's Day</p></div>
+        <div class="day reveal"><span class="day__date"><b>11</b>Oct</span><p>International Day of the Girl Child</p></div>
+        <div class="day reveal"><span class="day__date"><b>15</b>Oct</span><p>International Day of Rural Women</p></div>
+        <div class="day reveal"><span class="day__date"><b>25</b>Nov</span><p>Day for the Elimination of Violence against Women, and the start of 16 Days of Activism</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MYTHS ============ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="head reveal">
+        <div>
+          <span class="label">Things people say</span>
+          <h2>Myth, and what's actually true</h2>
+        </div>
+      </div>
+      <div class="myths reveal">
+        <div class="myth">
+          <div class="is-myth"><span>Myth</span><p>Gender equality has already been achieved.</p></div>
+          <div><span>Actually</span><p>More than half of countries still lack full legal protections, and the pay gap is still around 20%.</p></div>
+        </div>
+        <div class="myth">
+          <div class="is-myth"><span>Myth</span><p>Feminism hates men.</p></div>
+          <div><span>Actually</span><p>It pushes back on gender roles that hurt everyone, men and boys included.</p></div>
+        </div>
+        <div class="myth">
+          <div class="is-myth"><span>Myth</span><p>It's not my problem.</p></div>
+          <div><span>Actually</span><p>Empowering women boosts productivity and growth. Equal places are better off for everyone.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container cols cols--center">
+      <div>
+        <p class="lede" style="margin-bottom:24px">Numbers only go so far. If any of this feels close to home, you can say so on our wall. No name needed.</p>
+        <a href="index.html#safe-space" class="arrow-link">Write on the wall</a>
+      </div>
+      <p class="note-small">Facts and figures on this page come from the United Nations'
+        <a href="https://www.un.org/en/global-issues/gender-equality" target="_blank" rel="noopener">Gender Equality</a>
+        page, UN Women, and partner agencies, summarized in our own words.</p>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/issue-dots.js"></script>
+</body>
+</html>

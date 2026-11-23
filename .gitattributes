@@ -1,0 +1,5 @@
+# Keep line endings consistent for everyone (Windows, Mac, Linux)
+* text=auto
+*.png binary
+*.ico binary
+*.jpg binary

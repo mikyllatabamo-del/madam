@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 20 450 294" fill="none" stroke="#FBF7EE" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round">
+  <title>MADAM</title>
+  <!-- ♀ ring, open at the upper right where it runs into the centre -->
+  <path d="M195 112 L160.5 76 A88 88 0 1 0 177 205 L301 80.5 A80 80 0 1 1 285.7 197.4 L266 177"/>
+  <!-- M inside the ♀ ring -->
+  <path d="M104 200 V92 L168 156"/>
+  <!-- A inside the ♂ ring -->
+  <path d="M213 205 L330 88 V200"/>
+  <!-- ♀ cross -->
+  <path d="M110 236 V302 M84 272 H136"/>
+  <!-- ♂ arrow -->
+  <path d="M398.4 84.7 L444 38 M418 38 H444 V64"/>
+</svg>

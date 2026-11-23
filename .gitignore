@@ -1,0 +1,17 @@
+# Local editor / tool settings (not part of the website)
+.claude/
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+node_modules/
+
+# Original photos (full size, with phone metadata). The site uses the cleaned copies in assets/.
+MADAM_photos/
